@@ -1,6 +1,6 @@
 "use client";
 import Webcam from "react-webcam";
-import React, { createElement, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 function Cams() {
   let img_snap = null;
