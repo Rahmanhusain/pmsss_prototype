@@ -1,4 +1,4 @@
-import Cams from "@/components/allcamera";
+import Cams from "@/Components/Cams";
 import Image from "next/image";
 
 export default function Home() {
