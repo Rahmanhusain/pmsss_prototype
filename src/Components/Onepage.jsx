@@ -2,7 +2,7 @@
 import React from 'react'
 import Instruction from './instruction';
 import Login from './login';
-import Registration from './registration';
+import Registration from './Registration';
 import OTPVerification from './OtpVerify';
 
 const Onepage = () => {
