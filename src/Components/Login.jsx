@@ -48,7 +48,6 @@ const PMSSSLogin = () => {
       <br />
 
       {/* Captcha Section */}
-      
       <label htmlFor="captcha">Captcha</label>
       <br />
       <div className="flex my-5 gap-4">
