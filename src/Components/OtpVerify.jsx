@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-const OTPVerification = () => {
+const OtpVerify = ({setIsVisible}) => {
   // State to control the display of the form
-  const [isVisible, setIsVisible] = useState(true);
+  
 
   // Function to handle the close button click
   const closeAlert = () => {
@@ -10,7 +10,7 @@ const OTPVerification = () => {
   };
 
   return (
-    isVisible && (
+    
       <div className="flex items-center justify-center w-screen h-screen fixed bg-[#0002] top-0  left-0">
         <div className=" p-6 rounded-lg border shadow-lg w-full max-w-sm relative h-auto bg-white z-10">
           {/* Close Button */}
@@ -68,7 +68,6 @@ const OTPVerification = () => {
         </div>
       </div>
     )
-  );
 };
 
-export default OTPVerification;
+export default OtpVerify;

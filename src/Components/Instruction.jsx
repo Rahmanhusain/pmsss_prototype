@@ -1,6 +1,4 @@
-import React from 'react'
-
-const instruction = () => {
+export default function Instruction(){
     return (
 
         <div className="flex-grow p-5 m-3 border bg-white rounded-lg shadow-lg"> {/* Instructions*/}
@@ -50,4 +48,4 @@ const instruction = () => {
     )
 }
 
-export default instruction;
+

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../assets/logo.png';
 
-const Header = () => {
+export default function Header(){
     return (
         <header className='bg-[#F8F2E3] flex justify-between h-20 items-center px-5'>
 
@@ -15,8 +15,9 @@ const Header = () => {
                         src={logo}
                         alt="Aicte logo"
                         loading='lazy'
-
-                        className="lazy object-contain h-full w-full"
+                        height={50}
+                        width='auto'
+                        className="object-contain"
                     />
                 </Link>
             </div>
@@ -34,5 +35,3 @@ const Header = () => {
         </header>
     );
 }
-
-export default Header;

@@ -1,8 +1,7 @@
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import React,{ useState } from 'react';
 
-const PMSSSRegistration = () => {
-  const router = useRouter();
+
+function Registration({ setisLogin }) {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -31,8 +30,7 @@ const PMSSSRegistration = () => {
   };
 
   const backLogin = () => {
-    // Navigate to login page
-    router.push('/login'); // Assuming you have a login route
+    setisLogin(true);
   };
 
   const getOtp = () => {
@@ -41,7 +39,7 @@ const PMSSSRegistration = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-[40rem] p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white">
+    <form onSubmit={handleSubmit} className="w-[40rem] h-fit p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white">
       <h1 className="text-3xl font-medium flex m-2 justify-center">Registration</h1>
       <hr className="border border-slate-800" />
       <br />
@@ -49,7 +47,7 @@ const PMSSSRegistration = () => {
       <label htmlFor="name">Name</label>
       <br />
       <input
-        className="w-full p-2 outline-none bg-blue-50"
+        className="mb-3 w-full p-2 outline-none bg-blue-50"
         type="text"
         name="name"
         id="name"
@@ -58,13 +56,12 @@ const PMSSSRegistration = () => {
         placeholder="Enter Your Name"
         required
       />
-      <br />
-      <br />
+     
 
       <label htmlFor="phone">Phone</label>
       <br />
       <input
-        className="w-full p-2 outline-none bg-blue-50"
+        className="mb-3 w-full p-2 outline-none bg-blue-50"
         type="tel"
         name="phone"
         pattern="[6-9]{1}[0-9]{9}"
@@ -74,13 +71,12 @@ const PMSSSRegistration = () => {
         placeholder="Enter Your Phone"
         required
       />
-      <br />
-      <br />
+      
 
       <label htmlFor="email">Email</label>
       <br />
       <input
-        className="w-full p-2 outline-none bg-blue-50"
+        className="mb-3 w-full p-2 outline-none bg-blue-50"
         type="email"
         name="email"
         id="email"
@@ -89,13 +85,12 @@ const PMSSSRegistration = () => {
         placeholder="Enter Your Email"
         required
       />
-      <br />
-      <br />
+      
 
       <label htmlFor="password">Password</label>
       <br />
       <input
-        className="w-full p-2 outline-none bg-blue-50"
+        className="mb-3 w-full p-2 outline-none bg-blue-50"
         type="password"
         name="password"
         id="password"
@@ -104,13 +99,12 @@ const PMSSSRegistration = () => {
         placeholder="Enter Password"
         required
       />
-      <br />
-      <br />
+     
 
       <label htmlFor="confirm_password">Confirm Password</label>
       <br />
       <input
-        className="w-full p-2 outline-none bg-blue-50"
+        className="mb-3 w-full p-2 outline-none bg-blue-50"
         type="password"
         name="confirm_password"
         id="confirm_password"
@@ -119,13 +113,12 @@ const PMSSSRegistration = () => {
         placeholder="Confirm Password"
         required
       />
-      <br />
-      <br />
+    
 
       {/* Captcha Section */}
       <label htmlFor="captcha">Captcha</label>
       <br />
-      <div className="flex my-5 gap-4">
+      <div className="flex mb-3 gap-x-4">
         <div className="w-1/2 p-3 bg-gray-700 text-white text-center">123</div>
         <input
           className="w-1/2 p-3 border-slate-600 border-2 rounded-md outline-none bg-blue-50"
@@ -137,19 +130,18 @@ const PMSSSRegistration = () => {
           placeholder="Enter Captcha"
           required
         />
-        <br />
-        <br />
+       
       </div>
 
       {/* Buttons */}
       <button
-        className="p-3 w-full bg-[#274897] text-white rounded-md hover:bg-[#274997e8]"
+        className="p-3 mb-3 w-full bg-[#274897] text-white rounded-md hover:bg-[#274997e8]"
         type="button"
         onClick={getOtp}
       >
-        Get OTP
+        Create Account
       </button>
-      <br />
+      {/* <br />
       <br />
       <button
         type="submit"
@@ -158,7 +150,8 @@ const PMSSSRegistration = () => {
         Register
       </button>
       <br />
-      <br />
+      <br /> */}
+      
       <button
         onClick={backLogin}
         type="button"
@@ -170,4 +163,4 @@ const PMSSSRegistration = () => {
   );
 };
 
-export default PMSSSRegistration;
+export default React.memo(Registration);

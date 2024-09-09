@@ -1,11 +1,13 @@
 'use client';
-import React from 'react'
-import Instruction from './instruction';
-import Login from './login';
-import Registration from './Registration';
-import OTPVerification from './OtpVerify';
+import React, { useState,Suspense, lazy } from 'react'
+import Instruction from './Instruction';
+import OtpVerify from './OtpVerify';
+const Login = lazy(() => import("./Login"))
+const Registration = lazy(() => import("./Registration"))
 
-const Onepage = () => {
+export default function Onepage() {
+  const [isLogin,setisLogin] = useState(true)
+  
   return (
     <div className="bg-white">
       {/* Header */}
@@ -16,9 +18,11 @@ const Onepage = () => {
         {/* Heading and Guidelines */}
         <Instruction />
 
-
         {/* Login Form */}
-        <Login />
+        <Suspense fallback={<div>loading</div>}>
+          {isLogin?<Login setisLogin={setisLogin}/>:<Registration setisLogin={setisLogin}/>}
+        </Suspense>
+
         {/* <Registration/> */}
 
 
@@ -26,5 +30,3 @@ const Onepage = () => {
     </div>
   );
 }
-
-export default Onepage

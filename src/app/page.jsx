@@ -1,7 +1,7 @@
 import Cams from "@/Components/Cams";
 import Image from "next/image";
 import Onepage from "@/Components/Onepage";
-import Header from '@/Components/header';
+import Header from '@/Components/Header';
 // import Image from 'next/image';
 
 export default function Home() {
