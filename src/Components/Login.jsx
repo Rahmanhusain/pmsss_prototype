@@ -9,17 +9,21 @@ function Login({ setisLogin }) {
     router.push('/forget-password'); // Assuming you have a forget password route
   }
   const openOtp = () => {
+    // Need to connect with backend and check working of visibility part 
     setIsVisible(true);
 
   }
   const goRegister = () => {
     setisLogin(false)
   }
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+  }
   const [isVisible, setIsVisible] = useState(false);
   return (
 
 <>
-    <form className="w-[40rem] h-fit p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white" action='#'>
+    <form className="w-[40rem] h-fit p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white" action={(e)=>handleSubmit} method='post'>
       <h1 className="text-3xl font-medium flex justify-center m-2">Login as Candidate</h1>
       <hr className="border border-slate-800" />
       <br />
