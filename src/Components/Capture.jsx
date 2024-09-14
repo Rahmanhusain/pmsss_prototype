@@ -1,5 +1,5 @@
 'use client'
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Webcam from 'react-webcam'
 import Image from 'next/image'
 
@@ -29,11 +29,11 @@ function Capture() {
     useEffect(() => {
         if (webcamRef.current) {
             const image = document.getElementById('camera_image');
-        image.style.display = 'none';
-          // Do something when the element is loaded
-        //   console.log('Element loaded:', webcamRef.current);
+            image.style.display = 'none';
+            // Do something when the element is loaded
+            //   console.log('Element loaded:', webcamRef.current);
         }
-      }, []);
+    }, []);
 
     return (
         <div className='absolute flex justify-center items-center w-screen h-screen top-0 left-0 bg-[#0002] z-10'>
@@ -48,11 +48,11 @@ function Capture() {
                     <Webcam onLoad={imageGayab} className='w-auto h-full m-auto rounded-md drop-shadow-2xl decoration-blue-500'
                         ref={webcamRef}
                         audio={false}
-                        
+
                         screenshotFormat="image/jpeg"
-                        
-                        videoConstraints={{facingMode: "user"}}
-                        
+
+                        videoConstraints={videoConstraints}
+
                         mirrored={true}
                         playsInline={false}
                         controls={false}
