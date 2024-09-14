@@ -17,33 +17,57 @@ function DocumentUpload() {
                         </div>
                         <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
                            <h2 className='w-1/5 font-semibold '>1</h2>
-                            <p className='w-3/5 '>Xth Marksheet</p>
+                            <p className='w-3/5 '>Candidate Photo</p>
                             <div className='w-2/5'>
-                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-700 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
                                 <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
                             </div>
                         </div>
                         <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
-                           <h2 className='w-1/5 font-semibold '>1</h2>
-                            <p className='w-3/5 '>Xth Marksheet</p>
+                           <h2 className='w-1/5 font-semibold '>2</h2>
+                            <p className='w-3/5 '>X<sup>th</sup> Marksheet</p>
                             <div className='w-2/5'>
-                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-700 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
                                 <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
                             </div>
                         </div>
                         <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
-                           <h2 className='w-1/5 font-semibold '>1</h2>
-                            <p className='w-3/5 '>Xth Marksheet</p>
+                           <h2 className='w-1/5 font-semibold '>3</h2>
+                            <p className='w-3/5 '>XII<sup>th</sup> Marksheet</p>
                             <div className='w-2/5'>
-                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-700 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
                                 <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
                             </div>
                         </div>
                         <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
-                           <h2 className='w-1/5 font-semibold '>1</h2>
-                            <p className='w-3/5 '>Xth Marksheet</p>
+                           <h2 className='w-1/5 font-semibold '>4</h2>
+                            <p className='w-3/5 '>Adhaar Card Front</p>
                             <div className='w-2/5'>
-                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-700 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
+                            </div>
+                        </div>
+                        <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
+                           <h2 className='w-1/5 font-semibold '>5</h2>
+                            <p className='w-3/5 '>Adhaar Card Back</p>
+                            <div className='w-2/5'>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
+                            </div>
+                        </div>
+                        <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
+                           <h2 className='w-1/5 font-semibold '>6</h2>
+                            <p className='w-3/5 '>Income Certificate</p>
+                            <div className='w-2/5'>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
+                            </div>
+                        </div>
+                        <div className='flex flex-row w-full justify-evenly items-center text-center text-lg py-3 border-t-2 mb-2  bg-transparent text-[#036d6bb5]'>
+                           <h2 className='w-1/5 font-semibold '>7</h2>
+                            <p className='w-3/5 '>Caste Certificate</p>
+                            <div className='w-2/5'>
+                                <button type="button" className='text-base text-white font-bold p-2 bg-blue-500 rounded-full px-5 mx-5'>Capture</button>
                                 <button type="button" className='text-base text-white font-bold p-2 bg-red-700 rounded-full px-5 mx-5'>Preview</button>
                             </div>
                         </div>
@@ -53,6 +77,10 @@ function DocumentUpload() {
 
                     </div>
                 </div>
+                <div className="flex w-full justify-between mt-4 ">
+                    <button type="submit" className='font-semibold rounded text-base text-[#036d6bd5] border-2 border-[#036d6bd5] py-3 px-6'>Previous</button>
+                    <button type="submit" className='font-semibold rounded text-base text-white bg-[#036d6bd5] py-3 px-6'>Save & Next</button>
+                    </div>
             </div>
         </div>
     )
