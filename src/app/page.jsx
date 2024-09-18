@@ -7,9 +7,10 @@ import Capture from "@/Components/Capture";
 export default function Home() {
   return (
     <>
-      <Capture />
+    <Header/>
+      {/* <Capture /> */}
       {/* <Header/> */}
-      {/* <Onepage/> */}
+      <Onepage/>
     </>
   );
 }
