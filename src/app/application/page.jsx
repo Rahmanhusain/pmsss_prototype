@@ -2,7 +2,7 @@ import ApplicationForm from "@/Components/Application/ApplicationForm"
 import DocumentUpload from "@/Components/Application/DocumentUpload"
 import PersonalDetails from "@/Components/Application/PersonalDetails"
 import StepRibbon from "@/Components/Application/StepRibbon"
-import Header from "@/Components/Header"
+import Header from "@/Components/header"
 
 function page() {
   return (
