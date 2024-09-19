@@ -1,14 +1,14 @@
-export default function Instruction(){
+export default function Instruction() {
     return (
-
-        <div className="flex-grow p-5 m-3 border bg-white rounded-lg shadow-lg"> {/* Instructions*/}
+        <div className="flex-grow p-5 m-3 border bg-white rounded-lg shadow-lg">
+            {/* Instructions */}
             <h1 className="text-3xl font-bold flex justify-center mb-2">Heading</h1>
             <p className="text-wrap w-full">
-                To register on the PMSSS (Prime Minister's Special Scholarship Scheme) portal, follow these instructions
+                To register on the PMSSS (Prime Minister&apos;s Special Scholarship Scheme) portal, follow these instructions
                 and rules:
                 <br />
                 <br />
-                1. Click on the "New Registration" or "Register" option.
+                1. Click on the &quot;New Registration&quot; or &quot;Register&quot; option.
                 <br />
                 2. Fill in your personal details like name, date of birth, contact information, etc.
                 <br />
@@ -44,8 +44,5 @@ export default function Instruction(){
                 apply for the scholarship program.
             </p>
         </div>
-
     )
 }
-
-
