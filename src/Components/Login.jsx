@@ -23,7 +23,7 @@ function Login({ setisLogin }) {
   return (
 
 <>
-    <form className="w-[40rem] h-fit p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white" action={(e)=>handleSubmit} method='post'>
+    <form className="w-[40rem] h-fit p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white" action={(e)=>handleSubmit}>
       <h1 className="text-3xl font-medium flex justify-center m-2">Login as Candidate</h1>
       <hr className="border border-slate-800" />
       <br />
