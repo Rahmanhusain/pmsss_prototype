@@ -1,4 +1,4 @@
-import {createWorker} from 'tesseract.js';
+/* import {createWorker} from 'tesseract.js';
 import { NextResponse } from 'next/server';
 
 export async function GET(req) {
@@ -13,3 +13,4 @@ export async function GET(req) {
     return NextResponse.json({ message: 'Error extracting text' }, { status: 500 });
   }
 }
+ */
