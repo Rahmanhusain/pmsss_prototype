@@ -1,4 +1,4 @@
-import Header from "@/Components/Header";
+import Header from "@/components/header";
 import React from "react";
 import Image from "next/image";
 import track from "@/assets/track.png";

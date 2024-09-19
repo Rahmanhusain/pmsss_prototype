@@ -1,8 +1,8 @@
-import ApplicationForm from "@/Components/Application/ApplicationForm";
-import DocumentUpload from "@/Components/Application/DocumentUpload";
-import PersonalDetails from "@/Components/Application/PersonalDetails";
-import StepRibbon from "@/Components/Application/StepRibbon";
-import Header from "@/Components/Header";
+import ApplicationForm from "@/components/Application/ApplicationForm";
+import DocumentUpload from "@/components/Application/DocumentUpload";
+import PersonalDetails from "@/components/Application/PersonalDetails";
+import StepRibbon from "@/components/Application/StepRibbon";
+import Header from "@/components/header";
 
 function page() {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Onepage from "@/Components/Onepage";
-import Header from "@/Components/Header";
-import Capture from "@/Components/Capture";
+import Onepage from "@/components/Onepage";
+import Header from "@/components/header";
+import Capture from "@/components/Capture";
 // import Image from 'next/image';
 
 export default function Home() {
