@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 
 const Dashboard = () => {
   return (

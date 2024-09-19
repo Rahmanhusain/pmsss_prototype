@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Onepage from "@/components/Onepage";
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import Capture from "@/components/Capture";
 // import Image from 'next/image';
 
