@@ -1,9 +1,8 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import Webcam from "react-webcam";
 import Image from "next/image";
 
-function Capture() {
+function Capture({setopenCam}) {
   const webcamRef = React.useRef(null);
   const [imageSrc, setImageSrc] = useState(null);
   const [isretake, setIsretake] = useState(false);
@@ -26,7 +25,7 @@ function Capture() {
 
 
   return (
-    <div className="absolute flex justify-center items-center w-screen h-screen top-0 left-0 bg-[#0002] z-10">
+    <div className="fixed flex justify-center items-center w-screen h-screen top-0 left-0 bg-[#0002] z-10">
       <div className="w-full md:w-1/3 h-full md:h-2/3 rounded-xl p-4 bg-[#036d6c]">
         <h1 className="text-2xl font-semibold w-full text-center text-white">
           Capture Document/Image
@@ -57,7 +56,7 @@ function Capture() {
           >
             {isretake?"Retake":"Capture"}
           </button>
-          <button className=" cursor-pointer p-2 bg-red-500 text-white rounded-md">
+          <button className=" cursor-pointer p-2 bg-red-500 text-white rounded-md" onClick={()=>{setopenCam(false)}}>
             Cancel
           </button>
         </div>

@@ -10,7 +10,8 @@ function Login({ setisLogin }) {
   }
   const openOtp = () => {
     // Need to connect with backend and check working of visibility part 
-    setIsVisible(true);
+    router.push('/application');
+   /*  setIsVisible(true); */
 
   }
   const goRegister = () => {
