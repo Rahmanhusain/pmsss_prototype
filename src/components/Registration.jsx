@@ -18,7 +18,7 @@ function Registration({ setisLogin }) {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Validation logic here
     if (formData.password !== formData.confirm_password) {
@@ -26,6 +26,26 @@ function Registration({ setisLogin }) {
       return;
     }
     // Add further form validation or submit logic here
+    try {
+      const res = await fetch('@api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        alert('User registered successfully');
+      } else {
+        alert('Registration failed');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Error occurred');
+    }
+
     console.log(formData);
   };
 
@@ -33,10 +53,7 @@ function Registration({ setisLogin }) {
     setisLogin(true);
   };
 
-  const getOtp = () => {
-    // Logic to request OTP (possibly an API call)
-    alert("OTP sent to your phone number.");
-  };
+
 
   return (
     <form onSubmit={handleSubmit} className="w-[40rem] h-fit p-5 m-3 mx-auto border-2 rounded-lg shadow-lg bg-white">
@@ -137,20 +154,11 @@ function Registration({ setisLogin }) {
       <button
         className="p-3 mb-3 w-full bg-[#274897] text-white rounded-md hover:bg-[#274997e8]"
         type="button"
-        onClick={getOtp}
+       
       >
         Create Account
       </button>
-      {/* <br />
-      <br />
-      <button
-        type="submit"
-        className="p-3 w-full bg-[#22A927] text-white rounded-md hover:bg-[#22a926e8]"
-      >
-        Register
-      </button>
-      <br />
-      <br /> */}
+      
       
       <button
         onClick={backLogin}
